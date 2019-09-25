@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".LoginAndSignup">
+
+    <TextView
+        android:id="@+id/scorex_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ScoreX"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:background="@drawable/button_radius"
+            android:layout_marginBottom="30dp"
+            android:layout_above="@+id/signup_button"
+            android:text="Login"
+            android:onClick="loginFunc"/>
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:paddingLeft="124dp"
+            android:paddingRight="124dp"
+            android:background="@drawable/button_radius"
+            android:layout_marginBottom="40dp"
+            android:text="Sign Up"
+            android:onClick="signupFunc"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
