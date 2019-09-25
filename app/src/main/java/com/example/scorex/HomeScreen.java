@@ -1,5 +1,6 @@
 package com.example.scorex;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -26,5 +27,10 @@ public class HomeScreen extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+    }
+
+    public void basketFunc(View view){
+        Intent intent = new Intent(this, Basketball.class);
+        startActivity(intent);
     }
 }
