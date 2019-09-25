@@ -15,7 +15,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void loginFunc(View view){
-        Intent intent = new Intent(this, Basketball.class);
+        Intent intent = new Intent(this, HomeScreen.class);
         startActivity(intent);
     }
 }

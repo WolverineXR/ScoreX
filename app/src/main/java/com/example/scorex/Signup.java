@@ -15,7 +15,7 @@ public class Signup extends AppCompatActivity {
     }
 
     public void signupFunc(View view){
-        Intent intent = new Intent(this, Basketball.class);
+        Intent intent = new Intent(this, HomeScreen.class);
         startActivity(intent);
     }
 }
