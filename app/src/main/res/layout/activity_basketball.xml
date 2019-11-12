@@ -20,11 +20,12 @@
             android:orientation="vertical">
 
 
-            <TextView
+            <EditText
+                android:id="@+id/basket_team_A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Team A"
+                android:hint="Team A"
                 android:textSize="20sp" />
 
             <TextView
@@ -77,11 +78,12 @@
             android:orientation="vertical">
 
 
-            <TextView
+            <EditText
+                android:id="@+id/basket_team_B"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Team B"
+                android:hint="Team A"
                 android:textSize="20sp" />
 
             <TextView
@@ -124,6 +126,17 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/save_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/reset_game"
+        android:text="Save"
+        android:textAllCaps="true"
+        android:onClick="saveScore"/>
+
+    <Button
+        android:id="@+id/reset_game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
