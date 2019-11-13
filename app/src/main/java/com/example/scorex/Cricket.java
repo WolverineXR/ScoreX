@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.scorex.data.ScoreContract.ScoreEntry;
 
-public class Basketball extends AppCompatActivity {
+public class Cricket extends AppCompatActivity {
 
     int scoreA = 0;
     int scoreB = 0;
@@ -20,16 +20,16 @@ public class Basketball extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_basketball);
+        setContentView(R.layout.activity_cricket);
     }
 
-    public void AddThreeToTeamA(View view) {
-        scoreA += 3;
+    public void AddSixToTeamA(View view) {
+        scoreA += 6;
         displayA();
     }
 
-    public void AddTwoToTeamA(View view) {
-        scoreA += 2;
+    public void AddFourToTeamA(View view) {
+        scoreA += 4;
         displayA();
     }
 
@@ -38,14 +38,14 @@ public class Basketball extends AppCompatActivity {
         displayA();
     }
 
-    public void AddThreeToTeamB(View view) {
-        scoreB += 3;
+    public void AddSixToTeamB(View view) {
+        scoreB += 6;
         displayB();
 
     }
 
-    public void AddTwoToTeamB(View view) {
-        scoreB += 2;
+    public void AddFourToTeamB(View view) {
+        scoreB += 4;
         displayB();
     }
 
@@ -65,11 +65,11 @@ public class Basketball extends AppCompatActivity {
     }
 
     public void saveScore(View view) {
-        String teamnameA = ((EditText) findViewById(R.id.basket_team_A)).getText().toString();
-        String teamnameB = ((EditText) findViewById(R.id.basket_team_B)).getText().toString();
+        String teamnameA = ((EditText) findViewById(R.id.cricket_team_A)).getText().toString();
+        String teamnameB = ((EditText) findViewById(R.id.cricket_team_B)).getText().toString();
 
         ContentValues values = new ContentValues();
-        values.put(ScoreEntry.COLUMN_SCORE_GAME, "BasketBall");
+        values.put(ScoreEntry.COLUMN_SCORE_GAME, "Cricket");
         values.put(ScoreEntry.COLUMN_SCORE_TEAMNAME_A, teamnameA);
         values.put(ScoreEntry.COLUMN_SCORE_TEAMSCORE_A, scoreA);
         values.put(ScoreEntry.COLUMN_SCORE_TEAMNAME_B, teamnameB);

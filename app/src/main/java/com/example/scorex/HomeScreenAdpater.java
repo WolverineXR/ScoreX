@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 public class HomeScreenAdpater extends FragmentPagerAdapter {
     private Context context;
+
     public HomeScreenAdpater(Context context, FragmentManager fm) {
         super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         this.context = context;
@@ -16,7 +17,7 @@ public class HomeScreenAdpater extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if(position == 0)
+        if (position == 0)
             return new GamesFragment();
         else
             return new PastGamesFragment();
@@ -25,7 +26,7 @@ public class HomeScreenAdpater extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-        if(position == 0)
+        if (position == 0)
             return context.getString(R.string.tab_text_1);
         else
             return context.getString(R.string.tab_text_2);

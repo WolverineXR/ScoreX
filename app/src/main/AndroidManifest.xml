@@ -6,10 +6,11 @@
         android:allowBackup="true"
         android:icon="@mipmap/score_icon"
         android:label="@string/app_name"
+
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".HomeScreen"/>
+        <activity android:name=".Cricket" />
+        <activity android:name=".HomeScreen" />
         <activity android:name=".Basketball" />
         <activity
             android:name=".Signup"
@@ -29,10 +30,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
-            android:exported="false"
+            android:name=".data.ScoreProvider"
             android:authorities="com.example.scorex"
-            android:name=".data.ScoreProvider"/>
+            android:exported="false" />
     </application>
 
 </manifest>

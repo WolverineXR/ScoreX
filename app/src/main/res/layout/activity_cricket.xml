@@ -5,8 +5,7 @@
     android:background="#FF9800"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Basketball">
-
+    tools:context=".Cricket">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +21,7 @@
 
 
             <EditText
-                android:id="@+id/basket_team_A"
+                android:id="@+id/cricket_team_A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Team A"
@@ -46,9 +45,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/button_radius"
-                android:onClick="AddThreeToTeamA"
+                android:onClick="AddSixToTeamA"
                 android:padding="10dp"
-                android:text="+3 Points"
+                android:text="+6 Points"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
@@ -59,9 +58,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/button_radius"
-                android:onClick="AddTwoToTeamA"
+                android:onClick="AddFourToTeamA"
                 android:padding="10dp"
-                android:text="+2 Points"
+                android:text="+4 Points"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
@@ -74,7 +73,7 @@
                 android:background="@drawable/button_radius"
                 android:onClick="AddOneToTeamA"
                 android:padding="10dp"
-                android:text="Free Throw"
+                android:text="Single Run"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
@@ -95,10 +94,10 @@
 
 
             <EditText
-                android:id="@+id/basket_team_B"
+                android:id="@+id/cricket_team_B"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Team A"
+                android:hint="Team B"
                 android:padding="5dp"
                 android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white"
@@ -119,9 +118,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/button_radius"
-                android:onClick="AddThreeToTeamB"
+                android:onClick="AddSixToTeamB"
                 android:padding="10dp"
-                android:text="+3 Points"
+                android:text="+6 Points"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
@@ -132,13 +131,12 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@drawable/button_radius"
-                android:onClick="AddTwoToTeamB"
+                android:onClick="AddFourToTeamB"
                 android:padding="10dp"
-                android:text="+2 Points"
+                android:text="+4 Points"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />
-
 
             <Button
                 android:layout_width="wrap_content"
@@ -147,7 +145,7 @@
                 android:background="@drawable/button_radius"
                 android:onClick="AddOneToTeamB"
                 android:padding="10dp"
-                android:text="Free Throw"
+                android:text="Single Run"
                 android:textAllCaps="true"
                 android:textColor="@android:color/white"
                 android:textSize="20sp" />

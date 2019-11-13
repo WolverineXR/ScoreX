@@ -3,94 +3,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signup"
-    android:background="#FF9800">
+    android:background="#FF9800"
+    tools:context=".Signup">
 
     <TextView
         android:id="@+id/scorex_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
-        android:text="ScoreX"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:textStyle="italic|bold"
-        android:textSize="70sp"/>
+        android:text="ScoreX"
+        android:textColor="@android:color/white"
+        android:textSize="70sp"
+        android:textStyle="italic|bold" />
+
 
     <EditText
-        android:id="@+id/name_edit_text"
+        android:id="@+id/signup_email_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/scorex_text_view"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="100dp"
+        android:drawableLeft="@drawable/ic_action_email"
         android:ems="12"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textColorHint="@android:color/white"/>
-
-    <EditText
-        android:id="@+id/mobile_edit_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/name_edit_text"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:ems="12"
-        android:inputType="number"
-        android:hint="Mobile"
-        android:textColorHint="@android:color/white"/>
-
-    <EditText
-        android:id="@+id/email_edit_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/mobile_edit_text"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:ems="12"
-        android:inputType="textEmailAddress"
         android:hint="Email"
-        android:textColorHint="@android:color/white"/>
+        android:inputType="textEmailAddress"
+        android:textColorHint="@android:color/white" />
 
     <EditText
-        android:id="@+id/password_edit_text"
+        android:id="@+id/signup_password_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/email_edit_text"
+        android:layout_below="@id/signup_email_edit_text"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_action_password"
         android:ems="12"
-        android:inputType="textPassword"
         android:hint="Password"
-        android:textColorHint="@android:color/white"/>
-
-    <EditText
-        android:id="@+id/repassword_edit_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/password_edit_text"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:ems="12"
         android:inputType="textPassword"
-        android:hint="Re-Enter Password"
-        android:textColorHint="@android:color/white"/>
+        android:textColorHint="@android:color/white" />
 
 
     <Button
         android:id="@+id/signup_button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/repassword_edit_text"
+        android:layout_below="@id/signup_password_edit_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/button_radius"
         android:text="Sign Up"
         android:textColor="@android:color/white"
-        android:onClick="signupFunc"/>
-
-
+        android:textSize="20sp" />
 
 </RelativeLayout>

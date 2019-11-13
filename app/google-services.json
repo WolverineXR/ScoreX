@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "3437791283",
+    "firebase_url": "https://scorex-f99ca.firebaseio.com",
+    "project_id": "scorex-f99ca",
+    "storage_bucket": "scorex-f99ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3437791283:android:8a23791c8cb06c56d6fb46",
+        "android_client_info": {
+          "package_name": "com.example.scorex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3437791283-slshr1k7j1hf3f12mlbd3c7f3lq7r0b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-Nku6-FxqOH4isKVGen-tS-J03FgUmkA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3437791283-slshr1k7j1hf3f12mlbd3c7f3lq7r0b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

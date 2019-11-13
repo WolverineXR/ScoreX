@@ -1,10 +1,10 @@
 package com.example.scorex;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginAndSignup extends AppCompatActivity {
 
@@ -14,13 +14,15 @@ public class LoginAndSignup extends AppCompatActivity {
         setContentView(R.layout.activity_login_signup);
     }
 
-    public void loginFunc(View view){
+    public void loginFunc(View view) {
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
+        finish();
     }
 
-    public void signupFunc(View view){
+    public void signupFunc(View view) {
         Intent intent = new Intent(this, Signup.class);
         startActivity(intent);
+        finish();
     }
 }

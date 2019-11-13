@@ -10,10 +10,10 @@
         android:id="@+id/scorex_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ScoreX"
-        android:textColor="@android:color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
+        android:text="ScoreX"
+        android:textColor="@android:color/white"
         android:textSize="70sp"
         android:textStyle="bold" />
 
@@ -27,29 +27,31 @@
             android:id="@+id/login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/signup_button"
             android:layout_centerHorizontal="true"
-            android:textColor="@android:color/white"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_radius"
+            android:onClick="loginFunc"
             android:paddingLeft="130dp"
             android:paddingRight="130dp"
-            android:background="@drawable/button_radius"
-            android:layout_marginBottom="30dp"
-            android:layout_above="@+id/signup_button"
             android:text="Login"
-            android:onClick="loginFunc"/>
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/signup_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_radius"
+            android:onClick="signupFunc"
             android:paddingLeft="124dp"
             android:paddingRight="124dp"
-            android:background="@drawable/button_radius"
-            android:layout_marginBottom="40dp"
             android:text="Sign Up"
-            android:onClick="signupFunc"/>
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 
